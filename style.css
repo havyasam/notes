@@ -1,0 +1,14 @@
+body {
+    background-image: linear-gradient(to right, #800080, #ffb6c1);  
+}
+
+
+.buton{
+    text-align: right;
+}
+#main{
+    text-align: center;
+}
+#notes{
+    padding-top: 20px;
+}
