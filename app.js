@@ -1,15 +1,24 @@
-const buton=document.getElementById("btn")
-const main=documnet.querySelector("#main")
+const container=document.getElementById("main")
+const btn=document.getElementById("btn")
 
+btn.addEventListener("click",addtext)
 
 function addtext(){
-    document.getElementById("demo").innerHTML=`<div id="logo">
-    <i class="fa-regular fa-pen-to-square">notes</i>
+  let note=document.createElement("div")
+  note.innerHTML=`<div id="logo">
+  <i class="fa-regular fa-pen-to-square">notes</i>
 
-    <div id="notes">
-        <i class="fa-solid fa-trash"></i>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+  <div id="notes">
+      <i class="fa-solid fa-trash"></i>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
 
-    </div>`
-
+  </div>`
+ 
+ 
+  
+  container.appendChild(note)
+ 
+  
+  
+  
 }

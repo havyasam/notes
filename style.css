@@ -12,7 +12,8 @@ body {
     text-align: center;
     padding-bottom:50px;
     display:flex;
-    
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #btn{
@@ -27,4 +28,7 @@ body {
     border-radius: 50px;
     color:red;
     
+}
+.fa-trash{
+    cursor: pointer;
 }
