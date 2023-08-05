@@ -9,7 +9,7 @@ function addtext(){
   <i class="fa-regular fa-pen-to-square">notes</i>
 
   <div id="notes">
-      <i class="fa-solid fa-trash"></i>
+      <i onclick="fun()"class="fa-solid fa-trash"></i>
       <textarea name="" id="" cols="30" rows="10"></textarea>
 
   </div>`
@@ -22,3 +22,8 @@ function addtext(){
   
   
 }
+function fun(){
+  const dele=document.getElementById("delet")
+  container.removeChild(container.firstElementChild);
+}
+
