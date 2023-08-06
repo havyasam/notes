@@ -9,12 +9,15 @@ function addtext(){
   <i class="fa-regular fa-pen-to-square">notes</i>
 
   <div id="notes">
-      <i onclick="fun()"class="fa-solid fa-trash"></i>
+      <i  class="fa-solid fa-trash"></i>
       <textarea name="" id="text" cols="30" rows="10"></textarea>
 
   </div>`
+ const trash=note.querySelector(".fa-trash")
  
- 
+  trash.addEventListener("click",()=>{
+    note.remove()
+  })
   
   container.appendChild(note)
  
@@ -22,8 +25,8 @@ function addtext(){
   
   
 }
-function fun(){
-  const dele=document.getElementById("delet")
-  container.removeChild(container.lastElementChild);
-}
 
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode")
+}

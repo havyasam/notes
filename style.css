@@ -1,6 +1,10 @@
 body {
-    background-image: linear-gradient(to right, #800080, #ffb6c1);  
+    background-image: linear-gradient(to right, #3366ff, #66ccff);
 }
+.dark-mode {
+    background-image: linear-gradient(to right, #800080, #ffb6c1);
+    
+  }
 
 
 .buton{
@@ -15,12 +19,13 @@ body {
     gap:20px;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap:wrap-reverse;
+    flex-wrap:wrap;
 }
 
 #btn{
     border-radius: 10%;
-    background-color: #800080;
+    background-color:black ;
+    color:white;
     padding: 8px 20px;
     cursor: pointer;
 }
@@ -43,22 +48,9 @@ body {
 #text{
     margin-bottom: 40px;
 }
-#ima{
-    height: 20px;
-    width:15px;
-    position: relative;
-    left:247px;
-    font-size: 27px;
-    top:-44px;
-    cursor: pointer;
-    z-index: 5;
-    
+#theme{
+    background-color: black;
+    color:white;
+    cursor:grab;
 }
-.bbt{
-    position: relative;
-    left:264px;
-    font-size: 27px;
-    top:-49px;
-    cursor: pointer;
 
-}
