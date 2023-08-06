@@ -24,6 +24,6 @@ function addtext(){
 }
 function fun(){
   const dele=document.getElementById("delet")
-  container.removeChild(container.firstElementChild);
+  container.removeChild(container.lastElementChild);
 }
 
