@@ -10,7 +10,7 @@ function addtext(){
 
   <div id="notes">
       <i onclick="fun()"class="fa-solid fa-trash"></i>
-      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <textarea name="" id="text" cols="30" rows="10"></textarea>
 
   </div>`
  
