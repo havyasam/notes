@@ -30,3 +30,20 @@ function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode")
 }
+const containers = document.querySelectorAll('.container');
+    const storageKeyPrefix = 'text';
+
+    const init = () => {
+      containers.forEach((container, index) => {
+        const textArea = container.querySelector('textarea');
+        const storageKey = `${storageKeyPrefix}-${index}`;
+
+        textArea.value = localStorage.getItem(storageKey);
+
+        textArea.addEventListener('input', () => {
+          localStorage.setItem(storageKey, textArea.value);
+        });
+      });
+    }
+
+    init();
