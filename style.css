@@ -40,7 +40,7 @@ body {
     
     position: relative;
     left:247px;
-    font-size: 27px;
+    font-size: 20px;
     top:-44px;
     cursor: pointer;
 }
@@ -52,5 +52,9 @@ body {
     background-color: black;
     color:white;
     cursor:grab;
+}
+textarea{
+    border-width: 2px;
+    border-color: #800080;
 }
 
