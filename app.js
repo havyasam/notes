@@ -10,7 +10,7 @@ function addtext(){
 
   <div id="notes">
       <i  class="fa-solid fa-trash"></i>
-      <textarea name="" id="text" cols="30" rows="10"></textarea>
+      <textarea class="hello"name="" id="text" cols="30" rows="10"></textarea>
 
   </div>`
  const trash=note.querySelector(".fa-trash")
@@ -30,7 +30,7 @@ function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode")
 }
-const containers = document.querySelectorAll('.container');
+const containers = document.querySelectorAll('.hello');
     const storageKeyPrefix = 'text';
 
     const init = () => {
