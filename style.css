@@ -1,3 +1,10 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+
+}
+
 body {
     background-image: linear-gradient(to right, #3366ff, #66ccff);
 }
@@ -5,56 +12,76 @@ body {
     background-image: linear-gradient(to right, #800080, #ffb6c1);
     
   }
+  #main{
+      min-height: 10vh;
+      padding-bottom: 50px;
+      display:flex;
+      justify-content: center;
+  }
+  #btn{
+      position:fixed;
+      top:20px;
+      right:20px;
+      right: 20px;
+      background-color: greenyellow;
+      padding:10px;
+      border:none;
+      outline:none;
+      border-radius: 5px;
+     
+  }
+  #btn:hover{
+      background-color: #66ccff;
+
+  }
+  .note{
+      width:300px;
+      background-color: black;
+      margin:15px;
+      border-radius:10px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+      overflow:hidden;
+      transition:box-shadow 0.3s easae;
 
 
-.buton{
-    position: fixed;
-    top:20px;
-    right: 20px;
-}
-#main{
-    text-align: center;
-    padding-bottom:50px;
-    display:flex;
-    gap:20px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap:wrap;
-}
+  }
+  .tool{
+      background-color: #222831;
+      color: white;
+      padding: 5px;
+      display: flex;
+      justify-content: flex-end;
 
-#btn{
-    border-radius: 10%;
-    background-color:black ;
-    color:white;
-    padding: 8px 20px;
-    cursor: pointer;
-}
-#note{
-    width:500px;
-    background-color: blue;
-    border-radius: 50px;
-    color:red;
-    
-}
-.fa-trash{
-    
-    position: relative;
-    left:247px;
-    font-size: 20px;
-    top:-44px;
-    cursor: pointer;
-}
 
-#text{
-    margin-bottom: 40px;
-}
+  }
+  .tool i{
+      padding:5px;
+      cursor: pointer;
+      transition: color 0.3 ease;
+
+  }
+  .tool i.hover{
+      color: #aca1a1;
+  }
+  .note textarea{
+      border:none;
+      min-height: 220px;
+      resize: none;
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+      background-color: transparent;
+      font-family: cursive;
+
+  }
+  .note textarea:focus{
+      outline:none;
+  }
+  
+
 #theme{
     background-color: black;
     color:white;
     cursor:grab;
-}
-textarea{
-    border-width: 3px;
-    border-color: #800080;
 }
 

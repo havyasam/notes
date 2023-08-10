@@ -6,14 +6,20 @@ btn.addEventListener("click",addNote)
 function addNote(){
   const note=document.createElement("div")
   note.classList.add("note")
-  note.innerHTML=`<div id="logo">
+  note.innerHTML=`    <div  id="main">
   <i class="fa-regular fa-pen-to-square">notes</i>
+  <div class="note">
+  <div class="tool">
+      <i class="fa-solid fa-save"></i>
+      <i   class="fa-solid fa-trash"></i>
+      </div>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
 
-  <div id="notes">
-      <i  class="fa-solid fa-trash"></i>
-      <textarea class="hello" name="" id="text" cols="30" rows="10"></textarea>
+  </div>
 
-  </div>`;
+</div>
+
+</div>`;
 
 
   const save=note.querySelector(".save")
