@@ -1,59 +1,34 @@
-const container = document.getElementById("main");
-const btn = document.getElementById("btn");
+const container=document.queryselector("main")
+const btn=document.querySelector("btn")
 
-// Event listener: Triggered when "Add Note" button is clicked
-btn.addEventListener("click", addText);
+btn.addEventListener("click",addtext)
 
-// Load notes from localStorage when the page loads
-loadNotesFromLocalStorage();
+function addtext(){
+  let note=document.createElement("div")
+  note.classList.add("note")
+  note.innerHTML=`<div id="logo">
+  <i class="fa-regular fa-pen-to-square">notes</i>
 
-// Function: Add a new note with a textarea
-function addText() {
-    // Create a new <div> element for the note
-    let note = document.createElement("div");
-    note.innerHTML = `
-        <div id="logo">
-            <i class="fa-regular fa-pen-to-square">notes</i>
-            <div class="notes">
-                <i class="fa-solid fa-trash"></i>
-                <textarea class="hello" name="" id="text" cols="30" rows="10"></textarea>
-            </div>
-        </div>`;
+  <div id="notes">
+      <i  class="fa-solid fa-trash"></i>
+      <textarea class="hello" name="" id="text" cols="30" rows="10"></textarea>
 
-    // Find the trash icon within the note
-    const trash = note.querySelector(".fa-trash");
+  </div>`
 
-    // Event listener: Triggered when the trash icon is clicked
-    trash.addEventListener("click", () => {
-        note.remove();
-    });
 
-    // Add the note to the container
-    container.appendChild(note);
+  const save=note.querySelector(".save")
+  const trash=note.querySelector(".fa-trash") 
+  const textarea=note.querySelector('textarea');
 
-    // Find the textarea within the note
-    const textarea = note.querySelector('textarea');
 
-    // Load saved content from localStorage
-    const savedContent = localStorage.getItem('note_' + Date.now());
-    if (savedContent) {
-        textarea.value = savedContent;
-    }
+  container.appendChild(note)
+ 
+ 
+}
+function saveNotes(){
 
-    // Event listener: Triggered when the content of the textarea changes
-    textarea.addEventListener('input', () => {
-        const content = textarea.value;
-        localStorage.setItem('note_' + Date.now(), content); // Save content to localStorage
-    });
+const notes=document.querySelectorAll(".note textarea")
+const data=Array.from(notes).map(note=>note.value)
+console.log(notes,data)
 }
 
-// Function: Load saved content from localStorage for all textareas
-function loadNotesFromLocalStorage() {
-    const notes = document.querySelectorAll(".note textarea");
-    notes.forEach((textarea, index) => {
-        const savedContent = localStorage.getItem('note_' + (index + 1));
-        if (savedContent) {
-            textarea.value = savedContent;
-        }
-    });
-  }
