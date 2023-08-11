@@ -17,6 +17,8 @@ body {
       padding-bottom: 50px;
       display:flex;
       justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
   }
   #btn{
       position:fixed;
