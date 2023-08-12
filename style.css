@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #3366ff, #66ccff);
+    background-image: linear-gradient(to right, #33ff55, #66ffb8);
 }
 .dark-mode {
     background-image: linear-gradient(to right, #800080, #ffb6c1);
@@ -30,7 +30,8 @@ body {
       border:none;
       outline:none;
       border-radius: 5px;
-      color:white
+      color:white;
+      font-family: cursive;
      
   }
   #btn:hover{
@@ -87,6 +88,12 @@ body {
 #theme{
     background-color: black;
     color:white;
-    cursor:grab;
+    cursor:pointer;
+    font-family: cursive;
+    border-radius: 7px;
+    width: 60px;
+    height: 25px;
+    margin: 10px;
+
 }
 
